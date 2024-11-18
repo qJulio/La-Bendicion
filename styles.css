@@ -47,7 +47,7 @@ nav ul li a:hover {
 
 .banner-rect {
     width: 100%;
-    max-width: 700px; /* El ancho máximo sigue siendo igual */
+    max-width: 940px; /* Ajustamos el max-width para adaptarlo a la resolución */
     border: 3px solid #00bfff;
     border-radius: 10px;
     overflow: hidden;
@@ -56,7 +56,7 @@ nav ul li a:hover {
 
 .banner-img {
     width: 100%;
-    height: auto; /* Mantener proporciones automáticas */
+    height: auto; /* Permitir que la altura se ajuste automáticamente */
     aspect-ratio: 16 / 9; /* Relación de aspecto fija */
     object-fit: cover;
 }
