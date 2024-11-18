@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Banner -->
+    <header class="banner">
+        <div class="banner-rect">
+            <a href="index.html">
+                <img src="images/banner.png" alt="Banner Vidriería" class="banner-img">
+            </a>
+        </div>
+    </header>
+
+    <!-- Menú de Navegación -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contáctanos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de Contáctanos -->
+    <section class="contact">
+        <h2>¡Contáctanos fácilmente!</h2>
+        <p>¿Tienes alguna duda? Haz click en el botón de abajo y abre una conversación con nosotros en WhatsApp. ¡Estamos aquí para ayudarte!</p>
+        <a href="https://api.whatsapp.com/send/?phone=50495478775&text&type=phone_number&app_absent=0" class="whatsapp-link" target="_blank">
+            <span class="whatsapp-text">Haz click aquí para ir al WhatsApp</span>
+            <img src="images/whatsapp.png" alt="WhatsApp Logo" class="whatsapp-icon">
+        </a>
+    </section>
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Vidriería La Bendición SDERL. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script>
+        // Cuando la página se carga, añadir la clase fade para la animación
+        window.addEventListener("load", function() {
+            document.body.classList.add("fade");
+        });
+    </script>
+</body>
+</html>
