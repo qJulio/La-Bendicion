@@ -1,0 +1,181 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #00bfff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #1e90ff;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+}
+
+.banner-rect {
+    width: 90%;
+    max-width: 680px; /* Menos ancho */
+    border: 3px solid #00bfff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: 200px; /* Menos alto */
+    object-fit: cover;
+}
+
+/* Sección de bienvenida */
+.about {
+    padding: 40px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.about h2 {
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Sección de servicios */
+.services {
+    padding: 40px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.services h2 {
+    color: #00bfff;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de los rectángulos de servicio */
+.service-boxes {
+    display: block;
+    margin-top: 20px;
+}
+
+.service-box {
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 2px solid #00bfff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.service-box img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 2px solid #00bfff;
+}
+
+.service-box h3 {
+    color: #00bfff;
+    margin: 10px 0;
+}
+
+.service-box p {
+    padding: 10px;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    background-color: #00bfff;
+    color: white;
+    padding: 10px;
+}
+/* Contenedor de los rectángulos de servicio */
+.service-boxes {
+    display: block;
+    margin-top: 20px;
+}
+
+.service-box {
+    width: 85%;  /* Aumentado el ancho de los cuadros */
+    max-width: 450px;  /* Tamaño máximo un poco mayor */
+    margin: 20px auto;
+    background-color: #fff;
+    border: 2px solid #00bfff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.service-box img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 2px solid #00bfff;
+}
+
+.service-box h3 {
+    color: #00bfff;
+    margin: 10px 0;
+}
+
+.service-box p {
+    padding: 10px;
+    color: #333;
+    font-size: 16px;
+}
+/* Añadir la animación de desvanecimiento */
+.fade {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Definir la animación de desvanecimiento */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Asegurarse de que la página se ve bien durante la animación */
+body {
+    transition: opacity 1s ease-in-out;
+}
