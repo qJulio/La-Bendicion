@@ -56,9 +56,16 @@ nav ul li a:hover {
 
 .banner-img {
     width: 100%;
-    height: auto; /* Permitir que la altura se ajuste automáticamente */
+    height: auto; /* Mantener proporcionalidad */
     aspect-ratio: 16 / 9; /* Relación de aspecto fija */
     object-fit: cover;
+}
+
+/* Ajuste de altura solo en pantallas grandes */
+@media (min-width: 1024px) {
+    .banner-img {
+        height: 60vh; /* Ajustamos la altura a un 60% de la altura de la ventana */
+    }
 }
 
 /* Sección de bienvenida */
