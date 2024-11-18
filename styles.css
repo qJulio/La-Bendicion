@@ -47,7 +47,7 @@ nav ul li a:hover {
 
 .banner-rect {
     width: 100%;
-    max-width: 700px; /* Ajuste de ancho para pantallas grandes */
+    max-width: 700px; /* El ancho máximo sigue siendo igual */
     border: 3px solid #00bfff;
     border-radius: 10px;
     overflow: hidden;
@@ -56,22 +56,9 @@ nav ul li a:hover {
 
 .banner-img {
     width: 100%;
-    height: auto; /* Permitir que la altura se ajuste automáticamente */
-    aspect-ratio: 16 / 9; /* Relación de aspecto para mantener proporciones */
+    height: auto; /* Mantener proporciones automáticas */
+    aspect-ratio: 16 / 9; /* Relación de aspecto fija */
     object-fit: cover;
-}
-
-/* Responsividad del banner */
-@media (max-width: 768px) {
-    .banner-rect {
-        max-width: 95%;
-    }
-}
-
-@media (max-width: 480px) {
-    .banner-rect {
-        max-width: 90%;
-    }
 }
 
 /* Sección de bienvenida */
