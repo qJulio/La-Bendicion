@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    transition: opacity 1s ease-in-out; /* Transición suave entre páginas */
 }
 
 nav {
@@ -40,22 +41,44 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: #e8f8ff; /* Tono más claro */
     padding: 10px 0;
 }
 
 .banner-rect {
     width: 90%;
-    max-width: 680px; /* Menos ancho */
+    max-width: 680px; /* Tamaño máximo ajustado */
     border: 3px solid #00bfff;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .banner-img {
     width: 100%;
-    height: 200px; /* Menos alto */
+    height: 180px; /* Altura ajustada */
     object-fit: cover;
+}
+
+/* Responsividad del banner */
+@media (max-width: 768px) {
+    .banner-rect {
+        max-width: 95%;
+    }
+
+    .banner-img {
+        height: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-rect {
+        max-width: 90%;
+    }
+
+    .banner-img {
+        height: 140px;
+    }
 }
 
 /* Sección de bienvenida */
@@ -89,8 +112,8 @@ nav ul li a:hover {
 }
 
 .service-box {
-    width: 80%;
-    max-width: 400px;
+    width: 85%; /* Aumentado el ancho de los cuadros */
+    max-width: 450px; /* Tamaño máximo un poco mayor */
     margin: 20px auto;
     background-color: #fff;
     border: 2px solid #00bfff;
@@ -125,47 +148,12 @@ footer {
     color: white;
     padding: 10px;
 }
-/* Contenedor de los rectángulos de servicio */
-.service-boxes {
-    display: block;
-    margin-top: 20px;
-}
 
-.service-box {
-    width: 85%;  /* Aumentado el ancho de los cuadros */
-    max-width: 450px;  /* Tamaño máximo un poco mayor */
-    margin: 20px auto;
-    background-color: #fff;
-    border: 2px solid #00bfff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
-}
-
-.service-box img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-bottom: 2px solid #00bfff;
-}
-
-.service-box h3 {
-    color: #00bfff;
-    margin: 10px 0;
-}
-
-.service-box p {
-    padding: 10px;
-    color: #333;
-    font-size: 16px;
-}
-/* Añadir la animación de desvanecimiento */
+/* Animación de desvanecimiento */
 .fade {
     animation: fadeIn 1s ease-in-out;
 }
 
-/* Definir la animación de desvanecimiento */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -173,9 +161,4 @@ footer {
     100% {
         opacity: 1;
     }
-}
-
-/* Asegurarse de que la página se ve bien durante la animación */
-body {
-    transition: opacity 1s ease-in-out;
 }
