@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicación</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos personalizados para la página de ubicación */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #00bfff;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        nav ul li a.active {
+            border-bottom: 2px solid white;
+        }
+
+        .heading {
+            text-align: center;
+            padding: 20px;
+            background-color: #e8f8ff;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 940px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .heading h1 {
+            color: #00bfff;
+            margin: 0;
+        }
+
+        .map-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            background-color: #ffffff;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 940px;
+        }
+
+        .map {
+            width: 100%;
+            height: 500px;
+            border: 2px solid #00bfff;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #00bfff;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="ubicacion.html" class="active">Ubicación</a></li>
+        </ul>
+    </nav>
+
+    <div class="heading">
+        <h1>Visítanos en nuestra ubicación</h1>
+    </div>
+
+    <div class="map-container">
+        <iframe 
+            class="map" 
+            src="https://maps.app.goo.gl/D5U2D5m2tqNjmB4KA"
+            loading="lazy">
+        </iframe>
+    </div>
+
+    <footer>
+        <p>&copy; 2024. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
